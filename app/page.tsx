@@ -46,26 +46,28 @@ export default async function Page() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-            <Link 
-              href="/leaderboard" 
+            <a 
+              href="https://github.com/synheart-ai/swip-dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 w-full md:w-auto rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-all transform hover:scale-105"
             >
-              View Global Leaderboard
-            </Link>
-            <Link 
-              href="/developer" 
-              className="px-8 py-4 w-full md:w-auto rounded-lg border border-gray-700 bg-gray-800/50 text-white font-semibold hover:bg-gray-700/50 transition-all backdrop-blur-sm"
-            >
-              Register Your App
-            </Link>
+              View on GitHub
+            </a>
             <a 
               href="https://github.com/synheart-ai/swip"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 w-full md:w-auto rounded-lg border border-purple-600/40 text-purple-200 hover:bg-purple-600/10 transition-all backdrop-blur-sm font-semibold"
+              className="px-8 py-4 w-full md:w-auto rounded-lg border border-gray-700 bg-gray-800/50 text-white font-semibold hover:bg-gray-700/50 transition-all backdrop-blur-sm"
             >
               Explore the Flutter SWIP SDK
             </a>
+            <Link 
+              href="/design-export" 
+              className="px-8 py-4 w-full md:w-auto rounded-lg border border-purple-600/40 text-purple-200 hover:bg-purple-600/10 transition-all backdrop-blur-sm font-semibold"
+            >
+              Design Export
+            </Link>
           </div>
 
           {/* Social Proof Stats */}
@@ -423,17 +425,19 @@ Future<void> startWearStream() async {
               Join hundreds of developers building transparent, data-driven wellness applications.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link 
-                href="/developer" 
+              <a 
+                href="https://github.com/synheart-ai/swip-dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-[0_0_40px_rgba(168,85,247,0.6)] transition-all"
               >
-                Register Your App
-              </Link>
+                View on GitHub
+              </a>
               <Link 
-                href="/leaderboard" 
+                href="/design-export" 
                 className="px-8 py-4 rounded-lg border border-gray-700 bg-gray-800/50 text-white font-semibold hover:bg-gray-700/50 transition-all"
               >
-                Explore Leaderboard
+                Design Export
               </Link>
             </div>
           </div>
@@ -458,11 +462,8 @@ Future<void> startWearStream() async {
 
             {/* Links Columns */}
             <div>
-              <h4 className="text-white font-semibold mb-4">Product</h4>
+              <h4 className="text-white font-semibold mb-4">Resources</h4>
               <ul className="space-y-2">
-                <li><Link href="/leaderboard" className="text-gray-400 hover:text-white text-sm transition-colors">Leaderboard</Link></li>
-                <li><Link href="/sessions" className="text-gray-400 hover:text-white text-sm transition-colors">Sessions</Link></li>
-                <li><Link href="/analytics" className="text-gray-400 hover:text-white text-sm transition-colors">Analytics</Link></li>
                 <li>
                   <a
                     href="https://github.com/synheart-ai/swip-dashboard"
@@ -476,23 +477,7 @@ Future<void> startWearStream() async {
                     </svg>
                   </a>
                 </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-white font-semibold mb-4">Developers</h4>
-              <ul className="space-y-2">
-                <li><Link href="/developer" className="text-gray-400 hover:text-white text-sm transition-colors">Portal</Link></li>
-                <li><Link href="/documentation" className="text-gray-400 hover:text-white text-sm transition-colors">Documentation</Link></li>
-                <li><Link href="/developer" className="text-gray-400 hover:text-white text-sm transition-colors">API Keys</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-white font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2">
-                <li><Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">Terms</Link></li>
-                <li><Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy</Link></li>
+                <li><Link href="/design-export" className="text-gray-400 hover:text-white text-sm transition-colors">Design Export</Link></li>
               </ul>
             </div>
             <div>
