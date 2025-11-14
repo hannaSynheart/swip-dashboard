@@ -19,7 +19,7 @@ export function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   // Check if we're on a page that should have the sidebar
-  const pagesWithoutSidebar = ['/auth', '/', '/documentation', '/privacy', '/terms'];
+  const pagesWithoutSidebar = ['/auth', '/', '/documentation', '/privacy', '/terms', '/design-export'];
   const showSidebar = !pagesWithoutSidebar.includes(pathname);
 
   useEffect(() => {
