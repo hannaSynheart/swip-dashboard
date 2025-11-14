@@ -19,7 +19,7 @@ export default function DesignExportPage() {
   const finalCTARef = useRef<HTMLDivElement>(null);
   const footerRef = useRef<HTMLElement>(null);
 
-  const downloadAsPNG = async (ref: React.RefObject<HTMLElement>, name: string) => {
+  const downloadAsPNG = async (ref: React.RefObject<HTMLElement | null>, name: string) => {
     if (!ref.current) return;
 
     setDownloading(name);
@@ -71,7 +71,7 @@ export default function DesignExportPage() {
     }
   };
 
-  const DownloadButton = ({ sectionName, sectionRef }: { sectionName: string; sectionRef: React.RefObject<HTMLElement> }) => (
+  const DownloadButton = ({ sectionName, sectionRef }: { sectionName: string; sectionRef: React.RefObject<HTMLElement | null> }) => (
     <button
       onClick={() => downloadAsPNG(sectionRef, sectionName)}
       disabled={downloading !== null}
